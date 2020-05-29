@@ -15,6 +15,13 @@ namespace MyExpenseTracker
         public MasterMenuPage()
         {
             InitializeComponent();
+
+            this.BindingContext = new
+            {
+                Header = "",
+                Image = "https://g.foolcdn.com/editorial/images/457855/jar-full-of-hundred-dollar-bills-money-savings.jpg",
+                Footer = "Your Expense Tracker"
+            };
         }
 
         private void MainMenuListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

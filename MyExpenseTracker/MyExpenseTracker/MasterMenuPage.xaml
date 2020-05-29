@@ -10,16 +10,25 @@
              IconImageSource="hamburger.png"
                   Title="Expense Tracker">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="Black" >
             <Label Text="Expense Tracker" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <StackLayout >
+                <Label Text="{Binding Header}" />
+
+                <Image Source="{Binding Image}"  />
+
+                <Label Text="{Binding Footer}" />
+            </StackLayout>
+
             <BoxView HorizontalOptions="FillAndExpand" Color="DarkBlue" HeightRequest="5"/>
-            <ListView x:Name="MainMenuListView" x:FieldModifier="public" ItemSelected="MainMenuListView_ItemSelected">
+            <ListView x:Name="MainMenuListView" x:FieldModifier="public" ItemSelected="MainMenuListView_ItemSelected" BackgroundColor="Black">
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type model:MasterPageItem}">
-                        <model:MasterPageItem Title="Overview" IconSource="overview.png" TargetType="{x:Type local:OverviewPage}"/>
-                        <model:MasterPageItem Title="Budget" IconSource="budget.png" TargetType="{x:Type local:BudgetPage}"/>
+                        <model:MasterPageItem Title="Home" IconSource="home.png" TargetType="{x:Type local:OverviewPage}"/>
+                        <model:MasterPageItem Title="Budget" IconSource="bonds.png" TargetType="{x:Type local:BudgetPage}"/>
                         <model:MasterPageItem Title="Categories" IconSource="selectCategory.png" TargetType="{x:Type local:CategoriesPage}" />
                         <model:MasterPageItem Title="Add Expense" IconSource="add.png" TargetType="{x:Type local:AddExpensePage}"/>
+                        <model:MasterPageItem Title="About Us" IconSource="address.png" TargetType="{x:Type local:AboutUs}"/>
                     </x:Array>
                 </ListView.ItemsSource>
                 <ListView.ItemTemplate>
@@ -31,7 +40,7 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
                                 <Image Source="{Binding IconSource}" />
-                                <Label Grid.Column="1" Text="{Binding Title}"/>
+                                <Label Grid.Column="1" Text="{Binding Title}" TextColor="White"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
