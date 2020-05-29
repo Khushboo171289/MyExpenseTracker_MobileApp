@@ -1,0 +1,1 @@
+C:\Users\khush\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\MyExpenseTracker.UWP.csproj;x86

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:MyExpenseTracker"
+             xmlns:model="clr-namespace:MyExpenseTracker.Model"
+             mc:Ignorable="d"
+             x:Class="MyExpenseTracker.MasterMenuPage"
+             IconImageSource="hamburger.png"
+                  Title="Expense Tracker">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Expense Tracker" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <BoxView HorizontalOptions="FillAndExpand" Color="DarkBlue" HeightRequest="5"/>
+            <ListView x:Name="MainMenuListView" x:FieldModifier="public" ItemSelected="MainMenuListView_ItemSelected">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type model:MasterPageItem}">
+                        <model:MasterPageItem Title="Overview" IconSource="overview.png" TargetType="{x:Type local:OverviewPage}"/>
+                        <model:MasterPageItem Title="Budget" IconSource="budget.png" TargetType="{x:Type local:BudgetPage}"/>
+                        <model:MasterPageItem Title="Categories" IconSource="selectCategory.png" TargetType="{x:Type local:CategoriesPage}" />
+                        <model:MasterPageItem Title="Add Expense" IconSource="add.png" TargetType="{x:Type local:AddExpensePage}"/>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding IconSource}" />
+                                <Label Grid.Column="1" Text="{Binding Title}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

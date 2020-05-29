@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyExpenseTracker.CategoriesPage"
+             xmlns:local="clr-namespace:MyExpenseTracker"
+             xmlns:model="clr-namespace:MyExpenseTracker.Model"
+             Title="Expense Categories"
+             IconImageSource="hamburger.png"
+             Padding="0,40,0,0">
+    <StackLayout>
+        <Label Text="Expense Categories" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Center"/>
+        <BoxView HorizontalOptions="FillAndExpand" Color="DarkBlue" HeightRequest="5"/>
+        <ListView x:Name="CateroryMenuListView" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type model:Categories}">
+                    <model:Categories Name="Home" IconSource="home.png"/>
+                    <model:Categories Name="Food" IconSource="groceries.png"/>
+                    <model:Categories Name="Auto" IconSource="auto.png"/>
+                    <model:Categories Name="Education" IconSource="education.png"/>
+                    <model:Categories Name="Health" IconSource="health.png"/>
+                    <model:Categories Name="Entertainment" IconSource="entertainment.png"/>
+
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding IconSource}" HeightRequest="20" WidthRequest="20" />
+                                <Label Text="{Binding Name}" />
+                            </StackLayout>
+                            <ListView x:Name="ExpenseDetailsListView">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout Orientation="Horizontal">
+                                                <StackLayout Orientation="Vertical">
+                                                    <Label />
+                                                    <Label />
+                                                </StackLayout>
+
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                            <BoxView HorizontalOptions="FillAndExpand" Color="Gray" HeightRequest="1"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
