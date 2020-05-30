@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj": {}
+    "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj": {
+    "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
         "projectName": "MyExpenseTracker.iOS",
-        "projectPath": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
-        "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
+        "packagesPath": "C:\\Users\\Shwet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\khush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shwet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
-                "projectPath": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
+              "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+                "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+    "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "projectUniqueName": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
         "projectName": "MyExpenseTracker",
-        "projectPath": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
-        "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
+        "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "packagesPath": "C:\\Users\\Shwet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\khush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shwet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

@@ -12,7 +12,7 @@ namespace MyExpenseTracker.Model
         food,
         auto,
         education,
-        helath
+        health
     };
     public class Expense
     {

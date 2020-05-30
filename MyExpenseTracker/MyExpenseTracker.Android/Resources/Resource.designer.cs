@@ -5750,7 +5750,7 @@ namespace MyExpenseTracker.Droid
 			public const int entertainment = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int groceries = 2131165287;
+			public const int food = 2131165287;
 			
 			// aapt resource value: 0x7F070068
 			public const int hamburger = 2131165288;

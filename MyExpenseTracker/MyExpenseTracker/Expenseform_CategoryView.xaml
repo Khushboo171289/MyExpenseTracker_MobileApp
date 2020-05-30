@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyExpenseTracker.Expenseform_CategoryView"
+             xmlns:local="clr-namespace:MyExpenseTracker"
+             xmlns:model="clr-namespace:MyExpenseTracker.Model"
+             Title="Expense Categories"
+             IconImageSource="hamburger.png"
+             Padding="0,40,0,0">
+    <StackLayout>
+        <Label Text="Expense Categories" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Center"/>
+        <BoxView HorizontalOptions="FillAndExpand" Color="DarkBlue" HeightRequest="5"/>
+        <ListView  x:Name="listView" ItemsSource="{Binding categories_oc}" ItemTapped="MyListView_ItemTapped" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding IconSource}" WidthRequest="20" HeightRequest="20"/>
+                                <Label Text="{Binding Name}" FontSize="24" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

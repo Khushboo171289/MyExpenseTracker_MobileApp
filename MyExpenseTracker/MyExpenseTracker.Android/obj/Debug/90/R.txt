@@ -963,7 +963,7 @@ int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
 int drawable education 0x7f070065
 int drawable entertainment 0x7f070066
-int drawable groceries 0x7f070067
+int drawable food 0x7f070067
 int drawable hamburger 0x7f070068
 int drawable health 0x7f070069
 int drawable home 0x7f07006a
