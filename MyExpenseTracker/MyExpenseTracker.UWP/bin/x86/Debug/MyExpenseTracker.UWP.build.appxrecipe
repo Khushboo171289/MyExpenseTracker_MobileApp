@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=bc21acfc-7e16-47ae-9950-60bdfb17c2b7</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\MyExpenseTracker.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\MyExpenseTracker.UWP.exe">
       <PackagePath>entrypoint\MyExpenseTracker.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
@@ -520,6 +520,27 @@
     <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\sqlite-net-pcl\1.7.335\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\sqlitepclraw.bundle_green\2.0.3\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\sqlitepclraw.core\2.0.3\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.3\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.3\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\system.memory\4.5.3\lib\netstandard2.0\System.Memory.dll">
+      <PackagePath>System.Memory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
@@ -538,7 +559,7 @@
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker\bin\Debug\netstandard2.0\MyExpenseTracker.dll">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\bin\Debug\netstandard2.0\MyExpenseTracker.dll">
       <PackagePath>MyExpenseTracker.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
@@ -550,127 +571,127 @@
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\MyExpenseTracker.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\MyExpenseTracker.UWP.xr.xml">
       <PackagePath>MyExpenseTracker.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
@@ -682,10 +703,10 @@
     <AppxPackagedFile Include="C:\Users\Shwet\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shwet\Desktop\MyExpenseTracker-master\MyExpenseTracker-master\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\Core\MyExpenseTracker.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\bin\x86\Debug\Core\MyExpenseTracker.UWP.exe">
       <PackagePath>MyExpenseTracker.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -52,10 +52,10 @@ C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\o
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MasterMenuPage.xaml.g.cs
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\OverviewPage.xaml.g.cs
-C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.csproj.CoreCompileInputs.cache
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.AssemblyInfoInputs.cache
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.AssemblyInfo.cs
-C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.dll
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\ref\MyExpenseTracker.dll
 C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.pdb
+C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.csproj.CoreCompileInputs.cache
+C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\XamlC.stamp

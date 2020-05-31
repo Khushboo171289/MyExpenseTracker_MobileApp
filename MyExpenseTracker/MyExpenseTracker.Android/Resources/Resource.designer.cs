@@ -5714,7 +5714,7 @@ namespace MyExpenseTracker.Droid
 			public const int add = 2131165274;
 			
 			// aapt resource value: 0x7F07005B
-			public const int auto = 2131165275;
+			public const int Auto = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
 			public const int avd_hide_password = 2131165276;
@@ -5744,22 +5744,22 @@ namespace MyExpenseTracker.Droid
 			public const int design_snackbar_background = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int education = 2131165285;
+			public const int Education = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int entertainment = 2131165286;
+			public const int Entertainment = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int food = 2131165287;
+			public const int Food = 2131165287;
 			
 			// aapt resource value: 0x7F070068
 			public const int hamburger = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int health = 2131165289;
+			public const int Health = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int home = 2131165290;
+			public const int Home = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
 			public const int ic_mtrl_chip_checked_black = 2131165291;

@@ -4,52 +4,53 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"            
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"                    
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:MyExpenseTracker"
+             xmlns:model="clr-namespace:MyExpenseTracker.Model"
              x:Class="MyExpenseTracker.AddExpensePage">
 
     <Grid >
         <Grid.RowDefinitions>
-            <RowDefinition Height="70" />
-            <RowDefinition Height="50"/>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+
         </Grid.RowDefinitions>
+        
+        <TableView>
+            <TableRoot Title="Add Expenses Page">
+                <TableSection>
+                   
 
-
-        <Label Text="Add New Expenses" BackgroundColor="Blue" TextColor="AntiqueWhite" Grid.Row="0" Margin="0,15,0,0" HorizontalOptions="Center"
-        FontSize="24"/>
-
-
-
-        <Button Text="prev" Clicked="Button_Clicked_2"  VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="1"/>
-
-        <Label x:Name="datelabel" TextColor="Red" WidthRequest="90" VerticalOptions="Start" HorizontalOptions="Center" FontSize="Subtitle" Grid.Row="1"/>
-
-
-        <Button Text="next"  Clicked="Button_Clicked_1" VerticalOptions="Start" HorizontalOptions="End" Grid.Row="1"/>
-        <StackLayout Orientation="Vertical" Grid.Row="2">
-            <Label Text ="Enter Description" HorizontalOptions="Start" VerticalOptions="Start" FontSize="20" BackgroundColor="Blue" TextColor="AntiqueWhite"/>
-            <Entry x:Name="data1Entry" Margin="0,0,0,0" Placeholder="Description Of Expenses"  Grid.Row="2" ClearButtonVisibility="WhileEditing" BackgroundColor="Aqua" CursorPosition="0" TextColor="Black"/>
-        </StackLayout>
-
-        <StackLayout Orientation="Vertical" Grid.Row="3">
-            <Label Text ="Enter Category" HorizontalOptions="Start" VerticalOptions="Start" FontSize="20" BackgroundColor="Blue" TextColor="AntiqueWhite"/>
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="CategoryName" Text="Food" HorizontalOptions="Start" VerticalOptions="Start" FontSize="20"  HeightRequest="30" WidthRequest="200" />
-                <ImageButton x:Name="Category_image" Source="food.png" WidthRequest="40" HeightRequest="40" VerticalOptions="Start" Margin="150,0,0,0" Clicked="Category_image_Clicked"/>
-            </StackLayout>
-        </StackLayout>
-
-        <StackLayout Orientation="Vertical" Grid.Row="4">
-            <Label Text ="Enter Amount Spent" HorizontalOptions="Start" VerticalOptions="Start" FontSize="20" BackgroundColor="Blue" TextColor="AntiqueWhite"/>
-            <Entry x:Name="data3Entry" Margin="0,0,0,0" Placeholder="Expense Amount"  Grid.Row="4" ClearButtonVisibility="WhileEditing" BackgroundColor="Aqua" CursorPosition="0" Keyboard="Numeric"/>
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal" Grid.Row="5" Margin="100,50,0,0">
-            <Button Text="Save" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Button Text="Cancel" VerticalOptions="Center" HorizontalOptions="Center" />
-        </StackLayout>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="prev" Clicked="PrevButtonClicked" HorizontalOptions="StartAndExpand"></Button>
+                            <Label x:Name="datelabel"  HorizontalOptions="Center" TextColor="Black"/>
+                            <Button Text="next" Clicked="NextButtonClicked" HorizontalOptions="EndAndExpand"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                    <TextCell Text="Choose Expense Category" TextColor="Black"></TextCell>
+                    <ViewCell Tapped="Category_Clicked">
+                        <StackLayout Orientation="Horizontal">
+                            <Label x:Name="Category_Name" Text="Food" FontSize="20"  HeightRequest="30" WidthRequest="200" Margin="20,0,0,0" ></Label>
+                            <ImageButton x:Name="Category_Image" Source="Food.png" Clicked="Category_Clicked"  />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <EntryCell x:Name= "Desc_Entry"  Placeholder="Enter Desciption of Expense">
+                    </EntryCell>
+                    <EntryCell x:Name="Amount_Entry" Placeholder="Enter Amount"  Keyboard="Numeric">
+                    </EntryCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="120,0,0,0">
+                            <Button Text="Save" HorizontalOptions="Center" Clicked="Save_Clicked"/>
+                            <Button Text="Cancel"  Clicked="Cancel_Clicked"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
     </Grid>
-    </ContentPage>
+</ContentPage>
     

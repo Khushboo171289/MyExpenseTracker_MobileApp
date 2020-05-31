@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using MyExpenseTracker.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +15,7 @@ namespace MyExpenseTracker
     public partial class AddExpensePage : ContentPage
     {
 
-        public string selectedDate;
+        public DateTime selDate;
         public int year;
         public int month;
         public int day;
@@ -25,16 +25,16 @@ namespace MyExpenseTracker
         public AddExpensePage()
         {
             InitializeComponent();
-            selectedDate = DateTime.Now.ToString("dd-MM-yyyy");
+            var selectedDate = DateTime.Now.ToString("dd-MM-yyyy");
             datelabel.Text = selectedDate;
-            Category_Text = "food";
-            Category_ImageSource = "food.png";
+            Category_Text = "Food";
+            Category_ImageSource = "Food.png";
             year = DateTime.Now.Year;
             month = DateTime.Now.Month;
             day = DateTime.Now.Day;
         }
 
-        protected override void OnAppearing()
+        protected async override void OnAppearing()
         {
             var _filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "select_category.txt");
 
@@ -42,34 +42,19 @@ namespace MyExpenseTracker
             {
                 var text = File.ReadAllText(_filename);
                 Category_Text = text;
-
                 Category_ImageSource = $"{Category_Text}.png";
-                Category_image.Source = Category_ImageSource;
-                CategoryName.Text = Category_Text;
+                Category_Image.Source = Category_ImageSource;
+                Category_Name.Text = Category_Text;
 
-               
+
             }
 
 
             load = false;
-
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            DateTime nowDate = new DateTime(year, month, day);
-
-            var nextDate = nowDate.AddDays(+1);
-
-            datelabel.Text = nextDate.ToString("dd-MM-yyyy");
-
-            year = nextDate.Year;
-            month = nextDate.Month;
-            day = nextDate.Day;
-
-        }
-
-        private void Button_Clicked_2(object sender, EventArgs e)
+        //Previous day
+        public void PrevButtonClicked(object sender, EventArgs args)
         {
             DateTime nowDate = new DateTime(year, month, day);
 
@@ -80,14 +65,51 @@ namespace MyExpenseTracker
             year = previewDate.Year;
             month = previewDate.Month;
             day = previewDate.Day;
-
+            selDate = previewDate.Date;
 
         }
+        //Next day
+        public void NextButtonClicked(object sender, EventArgs args)
+        {
 
-        private async void Category_image_Clicked(object sender, EventArgs e)
+            DateTime nowDate = new DateTime(year, month, day);
+
+            var nextDate = nowDate.AddDays(+1);
+
+            datelabel.Text = nextDate.ToString("dd-MM-yyyy");
+
+            year = nextDate.Year;
+            month = nextDate.Month;
+            day = nextDate.Day;
+            selDate = nextDate.Date;
+        }
+
+        private async void Category_Clicked(object sender, EventArgs e)
         {
             load = true;
             await Navigation.PushModalAsync(new Expenseform_CategoryView());
+
         }
+
+        private async void Save_Clicked(object sender, EventArgs e)
+        {
+
+            Expense expense = new Expense();
+            expense.Category = Category_Name.Text;
+            expense.Spent = double.Parse(Amount_Entry.Text);
+            expense.Details = Desc_Entry.Text;
+            expense.Date = selDate;
+            await App.Database.SaveExpenseAsync(expense);
+            await Navigation.PopAsync();
+
+        }
+
+         private void Cancel_Clicked(object sender, EventArgs e)
+          {
+
+          }
+
+       
     }
 }
+
