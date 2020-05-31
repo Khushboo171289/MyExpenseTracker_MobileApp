@@ -11,7 +11,7 @@
                    
                    
                    By using this tool, we hope you can better manage your wealth !!"
-                   
+
                    FontAttributes="Bold"
                    FontSize="Large"
                    BackgroundColor="#1ADB34"   
@@ -28,4 +28,4 @@
                    Margin="10,15,10,20"/>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage> 

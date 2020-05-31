@@ -13,42 +13,16 @@
     <StackLayout>
         <Label Text="Expense Categories" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Center"/>
         <BoxView HorizontalOptions="FillAndExpand" Color="DarkBlue" HeightRequest="5"/>
-        <ListView x:Name="CateroryMenuListView" x:FieldModifier="public">
-            <ListView.ItemsSource>
-                <x:Array Type="{x:Type model:Categories}">
-                    <model:Categories Name="Home" IconSource="home.png"/>
-                    <model:Categories Name="Food" IconSource="groceries.png"/>
-                    <model:Categories Name="Auto" IconSource="auto.png"/>
-                    <model:Categories Name="Education" IconSource="education.png"/>
-                    <model:Categories Name="Health" IconSource="health.png"/>
-                    <model:Categories Name="Entertainment" IconSource="entertainment.png"/>
-
-                </x:Array>
-            </ListView.ItemsSource>
+        <ListView  x:Name="listView" ItemsSource="{Binding categories_oc}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Vertical" >
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
                             <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding IconSource}" HeightRequest="20" WidthRequest="20" />
-                                <Label Text="{Binding Name}" />
+                                <Image Source="{Binding IconSource}" WidthRequest="20" HeightRequest="20"/>
+                                <Label Text="{Binding Name}" FontSize="24" />
                             </StackLayout>
-                            <ListView x:Name="ExpenseDetailsListView">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <ViewCell>
-                                            <StackLayout Orientation="Horizontal">
-                                                <StackLayout Orientation="Vertical">
-                                                    <Label />
-                                                    <Label />
-                                                </StackLayout>
-
-                                            </StackLayout>
-                                        </ViewCell>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
-                            <BoxView HorizontalOptions="FillAndExpand" Color="Gray" HeightRequest="1"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

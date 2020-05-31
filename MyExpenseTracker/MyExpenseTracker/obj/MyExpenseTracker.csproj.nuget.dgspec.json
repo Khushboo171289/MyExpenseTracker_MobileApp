@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {}
+    "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+    "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "projectUniqueName": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
         "projectName": "MyExpenseTracker",
-        "projectPath": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
-        "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khush\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
+        "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "packagesPath": "C:\\Users\\Shwet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\khush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shwet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -55,6 +55,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.4.0.991265, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [

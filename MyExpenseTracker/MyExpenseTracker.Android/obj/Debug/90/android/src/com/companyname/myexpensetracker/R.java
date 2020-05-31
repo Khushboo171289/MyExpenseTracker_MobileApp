@@ -4560,7 +4560,7 @@ public final class R {
     public static final int design_snackbar_background=0x7f070064;
     public static final int education=0x7f070065;
     public static final int entertainment=0x7f070066;
-    public static final int groceries=0x7f070067;
+    public static final int food=0x7f070067;
     public static final int hamburger=0x7f070068;
     public static final int health=0x7f070069;
     public static final int home=0x7f07006a;
