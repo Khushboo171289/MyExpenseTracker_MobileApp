@@ -27,6 +27,12 @@ namespace MyExpenseTracker.Data
                             .Where(i => i.ID == id)
                             .FirstOrDefaultAsync();
         }
+        public Task<List<Expense>> GetExpenseByCategory(string category)
+        {
+            return _database.Table<Expense>()
+                    .Where(i => i.Category == category)
+                    .ToListAsync();
+        }
 
         public Task<int> SaveExpenseAsync(Expense expense)
         {

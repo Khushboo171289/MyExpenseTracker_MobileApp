@@ -9134,18 +9134,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Shwet\\.nuget\\packages\\": {},
+    "C:\\Users\\khush\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
+      "projectUniqueName": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
       "projectName": "MyExpenseTracker.UWP",
-      "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
-      "packagesPath": "C:\\Users\\Shwet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\obj\\",
+      "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
+      "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
+      "outputPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9153,7 +9153,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Shwet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\khush\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9167,8 +9167,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
-              "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
+            "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+              "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
             }
           }
         }

@@ -2168,24 +2168,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\snaga\\.nuget\\packages\\": {},
+    "C:\\Users\\khush\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
+      "projectUniqueName": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
       "projectName": "MyExpenseTracker.Android",
-      "projectPath": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
-      "packagesPath": "C:\\Users\\snaga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\obj\\",
+      "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
+      "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
+      "outputPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\snaga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\khush\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2199,8 +2199,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
-              "projectPath": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
+            "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+              "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
             }
           }
         }

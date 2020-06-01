@@ -34,7 +34,7 @@ namespace MyExpenseTracker
             year = DateTime.Now.Year;
             month = DateTime.Now.Month;
             day = DateTime.Now.Day;
-
+            selDate = DateTime.Now;
             if (!File.Exists(_budgetFile))
             {
                 // DisplayAlert("Alert", "You have been alerted", "OK");
@@ -80,7 +80,7 @@ namespace MyExpenseTracker
             year = previewDate.Year;
             month = previewDate.Month;
             day = previewDate.Day;
-            selDate = previewDate.Date;
+            selDate = previewDate;
 
         }
         //Next day
@@ -96,7 +96,7 @@ namespace MyExpenseTracker
             year = nextDate.Year;
             month = nextDate.Month;
             day = nextDate.Day;
-            selDate = nextDate.Date;
+            selDate = nextDate;
         }
 
         private async void Category_Clicked(object sender, EventArgs e)
