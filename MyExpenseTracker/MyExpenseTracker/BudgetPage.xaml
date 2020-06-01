@@ -2,14 +2,40 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:MyExpenseTracker"
              mc:Ignorable="d"
              x:Class="MyExpenseTracker.BudgetPage">
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Create a Budget"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+            <TableView>
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell Label="Your Monthly budget" Text="{Binding DisplayName}" IsEnabled="False" />
+                        <EntryCell x:Name="expenditureEntry" Label="Your Monthly expenditure" Placeholder="0.00" Keyboard="Numeric" />
+                        <EntryCell x:Name="calcBalance" Label="Your Monthly balance" Placeholder="0.00" IsEnabled="False" />
+                        <!--<ImageCell Text="ImageCell Text" Detail="ImageCell Detail" ImageSource="overview.png" />-->
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <!--<Label Text="{Binding DisplayName}" FontSize="Large" TextColor="Green"  FontAttributes="Bold"/>-->
+
+            <Entry x:Name="budgetEntry" Text="{Binding Name}"
+                Placeholder="Enter your budget"
+                Keyboard="Numeric"    
+                
+                   Margin="10,-450,10,90"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="setButton" Text="Set" Clicked="OnSetButtonClicked"  />
+                <Button x:Name="resetButton" Text="Reset" Grid.Column="1" Clicked="OnResetButtonClicked" />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
