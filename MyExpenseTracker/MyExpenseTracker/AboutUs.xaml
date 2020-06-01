@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="MyExpenseTracker.AboutUs">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#1ADB34">
+        <StackLayout BackgroundColor="#69CAEE">
             <Label Text="**Team 7 Expense Tracker Mobile Application**
                    
                    
@@ -14,7 +14,7 @@
 
                    FontAttributes="Bold"
                    FontSize="Large"
-                   BackgroundColor="#1ADB34"   
+                   BackgroundColor="#69CAEE"   
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="End" 
                    Margin="10,10,10,10"/>
@@ -22,7 +22,7 @@
                    TextColor="Black"
                    FontAttributes="Italic"
                    FontSize="Large"
-                   BackgroundColor="#1ADB34"   
+                   BackgroundColor="#69CAEE"   
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="End" 
                    Margin="10,15,10,20"/>

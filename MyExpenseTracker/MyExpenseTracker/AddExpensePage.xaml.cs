@@ -22,6 +22,8 @@ namespace MyExpenseTracker
         public bool load = false;
         public string Category_Text;
         public string Category_ImageSource;
+        public string _budgetFile = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "budget.txt");
         public AddExpensePage()
         {
             InitializeComponent();
@@ -32,6 +34,19 @@ namespace MyExpenseTracker
             year = DateTime.Now.Year;
             month = DateTime.Now.Month;
             day = DateTime.Now.Day;
+
+            if (!File.Exists(_budgetFile))
+            {
+                // DisplayAlert("Alert", "You have been alerted", "OK");
+                goToBudgetPage();
+            }
+
+        }
+
+        public async void goToBudgetPage()
+        {
+            await DisplayAlert("Alert", "Please set the budget first. Redirecting to Budget page", "OK");
+            await Navigation.PushModalAsync(new BudgetPage());
         }
 
         protected async override void OnAppearing()
