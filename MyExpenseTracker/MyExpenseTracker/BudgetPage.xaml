@@ -21,7 +21,7 @@
                         </ViewCell>
                         </TableSection>
                     <TableSection>
-                        <EntryCell x:Name="budgetEntry" Text="{Binding Name, StringFormat='${0:N}'}"  Placeholder="Enter your budget" Keyboard="Numeric"   ></EntryCell>
+                        <EntryCell x:Name="budgetEntry"  Placeholder="Enter your budget" Keyboard="Numeric"   ></EntryCell>
                           
                         </TableSection>
                     <TableSection>

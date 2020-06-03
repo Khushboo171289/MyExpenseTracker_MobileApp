@@ -64,13 +64,13 @@ namespace MyExpenseTracker
         {
            budgetEntry.Text = string.Empty;
 
-           /* if (File.Exists(_budgetFile))
+           if (File.Exists(_budgetFile))
             {
                 File.Delete(_budgetFile);
             }
             budgetEntry.Text = String.Empty;
             setButton.IsEnabled = true;
-            budgetEntry.IsEnabled = true; */       
+            budgetEntry.IsEnabled = true;      
         }
     }
 }
