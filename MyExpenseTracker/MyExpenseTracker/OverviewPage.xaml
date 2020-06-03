@@ -4,12 +4,34 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:MyExpenseTracker"
+             xmlns:model="clr-namespace:MyExpenseTracker.Model"
              x:Class="MyExpenseTracker.OverviewPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Budget Overview"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+
+
+    <StackLayout Orientation="Vertical">
+        
+        <Label x:Name="Month" Text="{Binding Month}" HorizontalOptions="CenterAndExpand" TextColor="Black" TextDecorations="Underline" FontSize="Title"></Label>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="Budget" Text="Budget" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular"  FontAttributes="Bold"/>
+            <Label x:Name="Expenses" Text="Expenses" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular"  FontAttributes="Bold"/>
+            <Label x:Name="Balance"  Text="Balance" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular"  FontAttributes="Bold"/>
         </StackLayout>
-    </ContentPage.Content>
+        <ListView x:Name="MyOverview" ItemsSource="{Binding Expense}" VerticalScrollBarVisibility="Always" Margin="0,20,0,0">
+                <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="{Binding Category}" FontSize="Small" TextColor="Black"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="Small" TextColor="Black"/>
+                            </StackLayout>
+                            <Label Text="{Binding Date}" FontSize="Small" TextColor="Black"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

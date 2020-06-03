@@ -10,6 +10,8 @@ namespace MyExpenseTracker.Data
     public class ExpenseDatabase
     {
         readonly SQLiteAsyncConnection _database;
+        
+
         public ExpenseDatabase(string dbPath)
         {
             _database = new SQLiteAsyncConnection(dbPath);
@@ -24,9 +26,17 @@ namespace MyExpenseTracker.Data
         public Task<Expense> GetExpenseAsync(int id)
         {
             return _database.Table<Expense>()
-                            .Where(i => i.ID == id)
-                            .FirstOrDefaultAsync();
+                            .Where(i => i.ID == id).FirstOrDefaultAsync();
         }
+
+        public Task<List<Expense>> GetExpenseByCategory(string category)
+        {
+            return _database.Table<Expense>()
+                    .Where(i => i.Category == category)
+                    .ToListAsync();
+        }
+
+
 
         public Task<int> SaveExpenseAsync(Expense expense)
         {
@@ -44,5 +54,14 @@ namespace MyExpenseTracker.Data
         {
             return _database.DeleteAsync(expense);
         }
+
+        public  decimal SumExpenseAsync()
+        {
+           return _database.ExecuteScalarAsync<decimal>("select Sum(Spent) FROM Expense").Result;
+        
+            
+        }
+
+
     }
 }

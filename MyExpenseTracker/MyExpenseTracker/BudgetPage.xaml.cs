@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MyExpenseTracker.Model;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,44 +15,62 @@ namespace MyExpenseTracker
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BudgetPage : ContentPage
     {
-        public string _budgetFile = Path.Combine(
-             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "budget.txt");
+        public string _budgetFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "budget.txt");
+
+
         public BudgetPage()
         {
             InitializeComponent();
+         
+            DateTime dt = DateTime.Today;
+            string thisMonth = dt.ToString("MMMM");
+            Month.Text = thisMonth;
+        
 
             if (File.Exists(_budgetFile))
-            {
-                budgetEntry.Text = File.ReadAllText(_budgetFile);
+            {            
                 setButton.IsEnabled = false;
-                budgetEntry.IsReadOnly = true;
+                budgetEntry.IsEnabled = false;
             }
         }
 
+        protected override void OnAppearing()
+        {
+            
+            if (File.Exists(_budgetFile))
+            {
+                string budget=File.ReadAllText(_budgetFile);
+                budgetEntry.Text = budget;
+                budgetEntry.IsEnabled = false;
+            }
+        }
+           
+        
 
 
 
-        private async void OnSetButtonClicked(object sender, EventArgs e)
+
+        private  void OnSetButtonClicked(object sender, EventArgs e)
         {
             File.WriteAllText(_budgetFile, budgetEntry.Text);
-            decimal budget = decimal.Parse(budgetEntry.Text);
-            decimal expenditure = decimal.Parse(expenditureEntry.Text);
-            decimal balance = budget - expenditure;
-            calcBalance.Text = balance.ToString();
+            decimal budget = decimal.Parse(budgetEntry.Text);         
+               
             setButton.IsEnabled = false;
-            budgetEntry.IsReadOnly = true;
-            await Navigation.PushModalAsync(new AddExpensePage());
+            budgetEntry.IsEnabled = false;
+           
         }
 
         private void OnResetButtonClicked(object sender, EventArgs e)
         {
-            if (File.Exists(_budgetFile))
+           budgetEntry.Text = string.Empty;
+
+           /* if (File.Exists(_budgetFile))
             {
                 File.Delete(_budgetFile);
             }
-            budgetEntry.Text = string.Empty;
+            budgetEntry.Text = String.Empty;
             setButton.IsEnabled = true;
-            budgetEntry.IsReadOnly = false;
+            budgetEntry.IsEnabled = true; */       
         }
     }
 }

@@ -1477,24 +1477,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\snaga\\.nuget\\packages\\": {},
+    "C:\\Users\\Shwet\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
       "projectName": "MyExpenseTracker.iOS",
-      "projectPath": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
-      "packagesPath": "C:\\Users\\snaga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
+      "packagesPath": "C:\\Users\\Shwet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\snaga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Shwet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1508,8 +1508,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
-              "projectPath": "C:\\Users\\snaga\\Documents\\GitHub\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
+            "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+              "projectPath": "C:\\Users\\Shwet\\source\\repos\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
             }
           }
         }
