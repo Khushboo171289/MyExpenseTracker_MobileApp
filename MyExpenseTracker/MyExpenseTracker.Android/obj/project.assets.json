@@ -2174,11 +2174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
+      "projectUniqueName": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
       "projectName": "MyExpenseTracker.Android",
-      "projectPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
+      "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\MyExpenseTracker.Android.csproj",
       "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-      "outputPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.Android\\obj\\",
+      "outputPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2199,8 +2199,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
-              "projectPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
+            "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+              "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
             }
           }
         }

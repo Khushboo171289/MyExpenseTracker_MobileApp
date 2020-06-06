@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x9d8Lbqit/ATkhwS799TCL9/R/c5bSW10qqUQVmhXXqtrmQYPYzkGLOTk1DuNnuRIctrWrrWyv3iNHYurldLSg==",
+  "dgSpecHash": "Jo1CKmChsb4TSJWGTK43HCn7Lko3NyrpGvfqoVpHgLFGhvx0fsURJmoQci8hWQhdZujDHCpoiIbbzZ1iJUToFg==",
   "success": true,
-  "projectFilePath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
+  "projectFilePath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.iOS\\MyExpenseTracker.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khush\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\khush\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",

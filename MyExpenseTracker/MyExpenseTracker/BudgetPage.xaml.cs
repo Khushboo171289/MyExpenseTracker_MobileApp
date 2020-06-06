@@ -103,7 +103,7 @@ namespace MyExpenseTracker
 
             TE =  App.Database.SumExpenseAsync();
 
-
+            
 
             Budget budget = new Budget();
             budget.Month = Month.Text;
@@ -178,6 +178,7 @@ namespace MyExpenseTracker
             var category6 = new Categories();
 
             category1.Name = "Home";
+            category1.Month = Month.Text;
             category1.Balance = hp - spent_h;
             category1.Spent = spent_h;
             category1.Budget = hp;
@@ -185,6 +186,7 @@ namespace MyExpenseTracker
             await App.Database.SaveCategoryAsync(category1);
 
             category2.Name = "Food";
+            category2.Month = Month.Text;
             category2.Balance = fp - spent_f;
             category2.Spent = spent_f;
             category2.Budget = fp;
@@ -192,6 +194,7 @@ namespace MyExpenseTracker
             await App.Database.SaveCategoryAsync(category2);
 
             category3.Name = "Health";
+            category3.Month = Month.Text;
             category3.Balance = hep - spent_he;
             category3.Spent = spent_he;
             category3.Budget = hep;
@@ -199,6 +202,7 @@ namespace MyExpenseTracker
             await App.Database.SaveCategoryAsync(category3);
 
             category4.Name = "Auto";
+            category4.Month = Month.Text;
             category4.Balance = ap - spent_A;
             category4.Spent = spent_A;
             category4.Budget = ap;
@@ -206,6 +210,7 @@ namespace MyExpenseTracker
             await App.Database.SaveCategoryAsync(category4);
 
             category5.Name = "Education";
+            category5.Month = Month.Text;
             category5.Balance = edp - spent_E;
             category5.Spent = spent_E;
             category5.Budget = edp;
@@ -213,6 +218,7 @@ namespace MyExpenseTracker
             await App.Database.SaveCategoryAsync(category5);
 
             category6.Name = "Entertainment";
+            category6.Month = Month.Text;
             category6.Balance = etrp - spent_En;
             category6.Spent = spent_En;
             category6.Budget = etrp;

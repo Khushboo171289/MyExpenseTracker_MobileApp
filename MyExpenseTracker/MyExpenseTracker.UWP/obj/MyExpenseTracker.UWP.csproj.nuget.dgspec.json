@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj": {}
+    "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj": {}
   },
   "projects": {
-    "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj": {
+    "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
+        "projectUniqueName": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
         "projectName": "MyExpenseTracker.UWP",
-        "projectPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
+        "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
         "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-        "outputPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.UWP\\obj\\",
+        "outputPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
-                "projectPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
+              "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+                "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+    "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "projectUniqueName": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
         "projectName": "MyExpenseTracker",
-        "projectPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
         "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-        "outputPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
+        "outputPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

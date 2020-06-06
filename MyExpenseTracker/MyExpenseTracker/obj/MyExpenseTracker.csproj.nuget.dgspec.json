@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {}
+    "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {}
   },
   "projects": {
-    "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
+    "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "projectUniqueName": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
         "projectName": "MyExpenseTracker",
-        "projectPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
+        "projectPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
         "packagesPath": "C:\\Users\\khush\\.nuget\\packages\\",
-        "outputPath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
+        "outputPath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
