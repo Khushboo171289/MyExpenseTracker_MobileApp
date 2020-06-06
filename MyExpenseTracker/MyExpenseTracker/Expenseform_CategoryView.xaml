@@ -21,7 +21,7 @@
                         Orientation="Vertical">
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding IconSource}" WidthRequest="20" HeightRequest="20"/>
-                                <Label Text="{Binding Name}" FontSize="24" />
+                                <Label Text="{Binding Name}" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"/>
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>

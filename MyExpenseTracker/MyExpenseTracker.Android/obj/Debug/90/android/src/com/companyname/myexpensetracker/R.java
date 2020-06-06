@@ -4589,6 +4589,7 @@ public final class R {
     public static final int selectcategory=0x7f070081;
     public static final int tooltip_frame_dark=0x7f070082;
     public static final int tooltip_frame_light=0x7f070083;
+    public static final int welcome=0x7f070084;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

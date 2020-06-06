@@ -12,214 +12,218 @@
              Padding="0,40,0,0">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
-                <ImageButton x:Name="Food" Source="food.png" HeightRequest="30" WidthRequest="30" Clicked="Food_Clicked"/>
-                <Label Text="Food" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
-
-                       VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <ListView x:Name="FoodListview">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"></RowDefinition>
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
+                    <ImageButton x:Name="Food" Source="food.png" HeightRequest="30" WidthRequest="30" Clicked="Food_Clicked"/>
+                    <Label Text="Food" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
+                    <Label x:Name="Food_TotalExpense" Text="{Binding FT , StringFormat='${0:N}'}" Margin="0,0,20,0" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <ListView x:Name="FoodListview">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
+                                    <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
-                                <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
-                                <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
+                                    <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
+                                    <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
 
 
-                            </Grid>
+                                </Grid>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
-                <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
+                    <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
-                <ImageButton x:Name="Home" Source="home.png" HeightRequest="30" WidthRequest="30" Clicked="Home_Clicked"/>
-                <Label Text="Home" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
+                    <ImageButton x:Name="Home" Source="home.png" HeightRequest="30" WidthRequest="30" Clicked="Home_Clicked"/>
+                    <Label Text="Home" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
                        VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
-            <ListView x:Name="HomeListview">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"></RowDefinition>
+                    <Label x:Name="Home_TotalExpense" Text="{Binding HT , StringFormat='${0:N}'}" Margin="0,0,20,0" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <ListView x:Name="HomeListview">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
+                                    <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
-                                <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
+                                    <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
                                     <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
 
-                            </Grid>
+                                </Grid>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
-                <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
+                    <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
 
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
-                <ImageButton x:Name="Auto" Source="auto.png" HeightRequest="30" WidthRequest="30" Clicked="Auto_Clicked"/>
-                <Label Text="Auto" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
+                    <ImageButton x:Name="Auto" Source="auto.png" HeightRequest="30" WidthRequest="30" Clicked="Auto_Clicked"/>
+                    <Label Text="Auto" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
 
                        VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <ListView x:Name="AutoListview">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"></RowDefinition>
+                    <Label x:Name="Auto_TotalExpense" Text="{Binding AT , StringFormat='${0:N}'}" Margin="0,0,20,0" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <ListView x:Name="AutoListview">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
+                                    <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
-                                <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
+                                    <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
                                     <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
 
 
-                            </Grid>
+                                </Grid>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
-                <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
+                    <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
-                <ImageButton x:Name="Health" Source="health.png" HeightRequest="30" WidthRequest="30" Clicked="Health_Clicked"/>
-                <Label Text="Health" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
+                    <ImageButton x:Name="Health" Source="health.png" HeightRequest="30" WidthRequest="30" Clicked="Health_Clicked"/>
+                    <Label Text="Health" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
 
                        VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <ListView x:Name="HealthListview">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"></RowDefinition>
+                    <Label x:Name="Health_TotalExpense" Margin="0,0,20,0" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <ListView x:Name="HealthListview">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
+                                    <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
-                                <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
-                                    <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
-
-
-                            </Grid>
-
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
-                <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
-            </StackLayout>
-        </StackLayout>
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
-                <ImageButton x:Name="Education" Source="education.png" HeightRequest="30" WidthRequest="30" Clicked="Edu_Clicked"/>
-                <Label Text="Education" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
-                       VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <ListView x:Name="EduListview">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"></RowDefinition>
                                         <RowDefinition Height="Auto"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
-                                <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
+                                    <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
                                     <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
 
 
-                            </Grid>
+                                </Grid>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
-                <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
+                    <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-        <StackLayout Orientation="Vertical" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
-            <StackLayout Orientation="Horizontal">
-                <ImageButton x:Name="Entertainment" Source="entertainment.png" HeightRequest="30" WidthRequest="30" Clicked="Entr_Clicked"/>
-                <Label Text="Entertainment" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
+                    <ImageButton x:Name="Education" Source="education.png" HeightRequest="30" WidthRequest="30" Clicked="Edu_Clicked"/>
+                    <Label Text="Education" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
+                       VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
+                    <Label x:Name="Edu_TotalExpense" Margin="0,0,20,0" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <ListView x:Name="EduListview">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
+                                    <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
+                                    <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
+
+
+                                </Grid>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
+                    <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Padding="15, 5, 0, 5" BackgroundColor="#f8f9fa">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton x:Name="Entertainment" Source="entertainment.png" HeightRequest="30" WidthRequest="30" Clicked="Entr_Clicked"/>
+                    <Label Text="Entertainment" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold"
 
                        VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <ListView x:Name="EntrListview">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"></RowDefinition>
-                                    <RowDefinition Height="Auto"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
-                                <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
+                    <Label x:Name="Entr_TotalExpense" Margin="0,0,20,0" Text="{}" FontSize="18" FontFamily="Roboto-Regular" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="End"/>
+                </StackLayout>
+                <ListView x:Name="EntrListview">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid RowSpacing="0" Padding="20, 5, 20, 5" BackgroundColor="White" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding Details}" FontFamily="Roboto-Medium" TextColor="#4D4D4D" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Start"/>
+                                    <Label Text="{Binding Date}" FontSize="10" FontFamily="Roboto-Regular" TextColor="#4D4D4D" Grid.Row="1" Grid.Column="0"/>
                                     <Label Text="{Binding Spent, StringFormat='${0:N}'}" FontSize="14" TextColor="#808080" FontFamily="Roboto-Medium" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
 
 
-                            </Grid>
+                                </Grid>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
-                <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout  Grid.Row="1" Padding ="-20, 0, -20, 0" VerticalOptions="End">
+                    <BoxView Color="Gray" Opacity="0.3" HeightRequest="0.5" ></BoxView>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
-    </StackLayout>
     </ContentPage.Content>
 </ContentPage>

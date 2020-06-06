@@ -5836,6 +5836,9 @@ namespace MyExpenseTracker.Droid
 			// aapt resource value: 0x7F070083
 			public const int tooltip_frame_light = 2131165315;
 			
+			// aapt resource value: 0x7F070084
+			public const int welcome = 2131165316;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

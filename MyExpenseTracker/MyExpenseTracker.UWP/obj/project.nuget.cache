@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4wh8MISOkJx/SxkTbwDpEn34A4eDj3rPqSV3xFIAF7uHLLqM78xHJ480Jjl/sPxDzVUXI9hhHVRwCrX+Aof3FA==",
+  "dgSpecHash": "OY4tZUrec/R7AH33TjXy4ShMC0UBe4ZHPAY2QMEw/Qxb8nemmsXck0FOUGggW5Bd3NdEu8r+bC7nsjCPQ6+aaQ==",
   "success": true,
-  "projectFilePath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
+  "projectFilePath": "D:\\MyExpenseTracker1\\MyExpenseTracker-MyExpenseTracker-06-03-2020\\MyExpenseTracker\\MyExpenseTracker.UWP\\MyExpenseTracker.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khush\\.nuget\\packages\\microsoft.net.native.compiler\\2.1.8\\microsoft.net.native.compiler.2.1.8.nupkg.sha512",
     "C:\\Users\\khush\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.1.2\\microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",

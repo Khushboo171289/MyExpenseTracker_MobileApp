@@ -16,10 +16,31 @@ namespace MyExpenseTracker
 
     public partial class CategoriesPage : ContentPage
     {
-        
+        public double FT;
+        public double HT;
+       public double AT;
+        public double HeT ;
+        public double ET ;
+        public double EnT ;
+
+        public string _budgetFile = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "budget.txt");
         public CategoriesPage()
         {
             InitializeComponent();
+           
+
+            if (!File.Exists(_budgetFile))
+            {
+                // DisplayAlert("Alert", "You have been alerted", "OK");
+                goToBudgetPage();
+            }
+        }
+
+        public async void goToBudgetPage()
+        {
+            await DisplayAlert("Alert", "Please set the budget first. Redirecting to Budget page", "OK");
+            await Navigation.PushModalAsync(new BudgetPage());
         }
 
         protected override async void OnAppearing()
@@ -37,7 +58,19 @@ namespace MyExpenseTracker
             AutoListview.IsVisible = false;
             EduListview.IsVisible = false;
             EntrListview.IsVisible = false;
+            double FT = App.Database.SumOfExpenseByCategoriesAsync("Food");
+            double HT = App.Database.SumOfExpenseByCategoriesAsync("Home");
+            double AT = App.Database.SumOfExpenseByCategoriesAsync("Auto");
+            double HeT = App.Database.SumOfExpenseByCategoriesAsync("Health");
+            double ET = App.Database.SumOfExpenseByCategoriesAsync("Education");
+            double EnT = App.Database.SumOfExpenseByCategoriesAsync("Entertainment");
 
+            Food_TotalExpense.Text = $"${FT}";
+            Home_TotalExpense.Text = $"${HT}";
+            Auto_TotalExpense.Text = $"${AT}";
+            Health_TotalExpense.Text = $"${HeT}";
+            Edu_TotalExpense.Text = $"${ET}";
+            Entr_TotalExpense.Text = $"${EnT}";
         }
 
         private void Home_Clicked(object sender, EventArgs e)
@@ -71,3 +104,4 @@ namespace MyExpenseTracker
         }
     }
 }
+    

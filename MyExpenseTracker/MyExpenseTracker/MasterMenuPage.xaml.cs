@@ -18,9 +18,9 @@ namespace MyExpenseTracker
 
             this.BindingContext = new
             {
-                Header = "",
+                Header = "My Expense Tracker",
                 Image = "https://g.foolcdn.com/editorial/images/457855/jar-full-of-hundred-dollar-bills-money-savings.jpg",
-                Footer = "Your Expense Tracker"
+
             };
         }
 
