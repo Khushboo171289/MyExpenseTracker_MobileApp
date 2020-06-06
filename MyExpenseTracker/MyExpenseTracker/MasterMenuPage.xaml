@@ -11,16 +11,13 @@
                   Title="Expense Tracker">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Black" >
-            <Label Text="Expense Tracker" TextColor="Black" FontSize="Title" HorizontalTextAlignment="Center"/>
+
             <StackLayout >
-                <Label Text="{Binding Header}" />
+                <Label Text="{Binding Header}" TextColor="White" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" />
 
                 <Image Source="{Binding Image}"  />
-
-                <Label Text="{Binding Footer}" />
             </StackLayout>
 
-            <BoxView HorizontalOptions="FillAndExpand" Color="DarkBlue" HeightRequest="5"/>
             <ListView x:Name="MainMenuListView" x:FieldModifier="public" ItemSelected="MainMenuListView_ItemSelected" BackgroundColor="Black">
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type model:MasterPageItem}">
