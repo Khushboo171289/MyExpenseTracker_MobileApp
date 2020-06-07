@@ -25,6 +25,7 @@
                         <model:MasterPageItem Title="Budget" IconSource="bonds.png" TargetType="{x:Type local:BudgetPage}"/>
                         <model:MasterPageItem Title="Categories" IconSource="selectCategory.png" TargetType="{x:Type local:CategoriesPage}" />
                         <model:MasterPageItem Title="Add Expense" IconSource="add.png" TargetType="{x:Type local:AddExpensePage}"/>
+                        <model:MasterPageItem Title="Analysis" IconSource="Chart1.png" TargetType="{x:Type local:Analysis}"/>
                         <model:MasterPageItem Title="About Us" IconSource="address.png" TargetType="{x:Type local:AboutUs}"/>
                     </x:Array>
                 </ListView.ItemsSource>
