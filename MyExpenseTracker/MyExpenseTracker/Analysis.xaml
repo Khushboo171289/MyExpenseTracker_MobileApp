@@ -7,14 +7,15 @@
              xmlns:local="clr-namespace:MyExpenseTracker" 
              xmlns:Model="clr-namespace:MyExpenseTracker.Model"
              mc:Ignorable="d"
-             x:Class="MyExpenseTracker.Analysis">
+             x:Class="MyExpenseTracker.Analysis"
+             Title="Analysis">
     <ContentPage.BindingContext>
         <Model:AllDataForGraph/>
     </ContentPage.BindingContext>
     <chart:SfChart>
 
         <chart:SfChart.Title>
-            <chart:ChartTitle Text="Expense Overview"/>
+            <chart:ChartTitle Text="Monthly Trends"/>
         </chart:SfChart.Title>
 
         <chart:SfChart.Legend>

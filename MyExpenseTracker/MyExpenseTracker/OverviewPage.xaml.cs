@@ -20,9 +20,7 @@ namespace MyExpenseTracker
         {
             InitializeComponent();
             DateTime dt = DateTime.Today;
-            string thisMonth = dt.ToString("MMMM");
-            //Month.Text = $"{thisMonth} Budget";
-            
+            string thisMonth = dt.ToString("MMMM"); 
         }
 
 
@@ -30,10 +28,12 @@ namespace MyExpenseTracker
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+
+           
+
             DateTime dt = DateTime.Today;
             string thisMonth = dt.ToString("MMMM");
             BudgetField.Text = $"{thisMonth} Budget";
-            //Month.Text = $"Budget details for the Month of {thisMonth}";
             var budgetlist = await App.Database.GetBudgetByMonth(thisMonth);
             if (budgetlist.Count > 0)
             {
@@ -55,15 +55,19 @@ namespace MyExpenseTracker
                     }
                     else
                     {
+                        if(budgetlist[0].Expense == 0 && budgetlist[0].Balance ==0 )
+                        {
+                            Balance.BackgroundColor = Color.FromHex("#3F539F");
+                            Balance.TextColor = Color.Black;
+                        }
+                        else
+                        { 
                         Balance.BackgroundColor = Color.FromHex("#3F539F");
                         Balance.TextColor = Color.Black;
-
+}
                     }
                 }
 
-                //Budget.Text = $"Budget = US ${budgetlist[0].BudgetAmount}";
-                //Expenses.Text= $"Expense = US ${budgetlist[0].Expense}";
-                //Balance.Text = $"Balance = US ${budgetlist[0].Balance}";
             }
             else
             {

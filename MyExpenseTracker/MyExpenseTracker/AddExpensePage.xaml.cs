@@ -52,7 +52,7 @@ namespace MyExpenseTracker
             var budgetlist = await App.Database.GetBudgetByMonth(thisMonth);
             if (budgetlist.Count == 0)
             {
-                // await DisplayAlert("Alert", "Set the monthly budget", "OK");
+                await DisplayAlert("Alert", "Set the monthly budget", "OK");
                 goToBudgetPage();
             }
 
@@ -62,9 +62,12 @@ namespace MyExpenseTracker
             {
                 var text = File.ReadAllText(_filename);
                 Category_Text = text;
-                Category_ImageSource = $"{Category_Text}.png";
+                Categories category = new Categories();
+                category = App.Database.GetSpecificCategory(text);
+                Category_ImageSource = category.IconSource;
                 Category_Image.Source = Category_ImageSource;
                 Category_Name.Text = Category_Text;
+
 
 
             }

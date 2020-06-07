@@ -28,14 +28,7 @@
                     <TableSection>
                         <EntryCell x:Name="budgetEntry"  Placeholder="Enter your budget" Keyboard="Numeric"   ></EntryCell>
                     </TableSection>
-                    <TableSection>
-                        <ViewCell >
-                            <StackLayout Orientation="Horizontal" Margin="20,0,0,0">
-                                <Button x:Name="setPerButton" Text="Set Category Budget" Clicked="setPerButton_Clicked" HorizontalOptions="Center"  />
-
-                            </StackLayout>
-                        </ViewCell>
-                    </TableSection>
+                    
                     <TableSection>
                         <ViewCell>
                             <StackLayout Margin="30,0,0,0" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Start" Spacing="10">

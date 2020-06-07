@@ -127,7 +127,6 @@ D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\bin\Debug
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\bin\Debug\netstandard2.0\MyExpenseTracker.dll
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\bin\Debug\netstandard2.0\ref\MyExpenseTracker.dll
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\bin\Debug\netstandard2.0\MyExpenseTracker.pdb
-D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.csprojAssemblyReference.cache
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\AboutUs.xaml.g.cs
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\AddExpensePage.xaml.g.cs
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\App.xaml.g.cs
@@ -137,11 +136,12 @@ D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MasterMenuPage.xaml.g.cs
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\OverviewPage.xaml.g.cs
-D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\WelcomePage.xaml.g.cs
-D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.csproj.CoreCompileInputs.cache
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.AssemblyInfoInputs.cache
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.AssemblyInfo.cs
-D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\XamlC.stamp
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.dll
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\ref\MyExpenseTracker.dll
 D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.pdb
+D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\Analysis.xaml.g.cs
+D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.csproj.CoreCompileInputs.cache
+D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\XamlC.stamp
+D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\obj\Debug\netstandard2.0\MyExpenseTracker.csprojAssemblyReference.cache

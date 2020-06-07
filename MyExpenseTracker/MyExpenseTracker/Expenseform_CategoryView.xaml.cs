@@ -16,7 +16,7 @@ namespace MyExpenseTracker
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Expenseform_CategoryView : ContentPage
     {
-        public ObservableCollection<Categories> categories_oc { get; set; }
+      
         public string selecteditem;
 
 
@@ -24,13 +24,6 @@ namespace MyExpenseTracker
         public Expenseform_CategoryView()
         {
             InitializeComponent();
-
-           // categories_oc = new ObservableCollection<Categories>();
-
-           // CategoryManager.GetAllCategories(categories_oc);
-
-           // listView.ItemsSource = categories_oc;
-
 
         }
 
