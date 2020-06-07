@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              xmlns:local="clr-namespace:MyExpenseTracker"
              xmlns:model="clr-namespace:MyExpenseTracker.Model"
-             x:Class="MyExpenseTracker.AddExpensePage">
+             x:Class="MyExpenseTracker.AddExpensePage"
+             Title="Add Expense">
 
     <Grid >
         <Grid.RowDefinitions>
@@ -16,21 +17,21 @@
         </Grid.RowDefinitions>
         
         <TableView>
-            <TableRoot Title="Add Expenses Page">
+            <TableRoot >
                 <TableSection>
                    
 
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Button Text="prev" Clicked="PrevButtonClicked" HorizontalOptions="StartAndExpand"></Button>
-                            <Label x:Name="datelabel"  HorizontalOptions="Center" TextColor="Black"/>
-                            <Button Text="next" Clicked="NextButtonClicked" HorizontalOptions="EndAndExpand"></Button>
+                            <Button Text="prev" Clicked="PrevButtonClicked" HorizontalOptions="StartAndExpand" FontAttributes="Bold"></Button>
+                            <Label x:Name="datelabel"  HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
+                            <Button Text="next" Clicked="NextButtonClicked" HorizontalOptions="EndAndExpand" FontAttributes="Bold"></Button>
                         </StackLayout>
                     </ViewCell>
                     <TextCell Text="Choose Expense Category" TextColor="Black"></TextCell>
                     <ViewCell Tapped="Category_Clicked">
                         <StackLayout Orientation="Horizontal">
-                            <Label x:Name="Category_Name" Text="Food" FontSize="20"  HeightRequest="30" WidthRequest="200" Margin="20,0,0,0" ></Label>
+                            <Label x:Name="Category_Name" Text="Food" FontSize="20"  HeightRequest="30" WidthRequest="200" Margin="20,0,0,0" FontFamily="Roboto-Regular"  FontAttributes="Bold"  ></Label>
                             <ImageButton x:Name="Category_Image" Source="Food.png" Clicked="Category_Clicked"  />
                         </StackLayout>
                     </ViewCell>
@@ -44,8 +45,8 @@
                 <TableSection>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="120,0,0,0">
-                            <Button Text="Save" HorizontalOptions="Center" Clicked="Save_Clicked"/>
-                            <Button Text="Cancel"  Clicked="Cancel_Clicked"/>
+                            <Button x:Name="Save" Text="Save" HorizontalOptions="Center" Clicked="Save_Clicked"/>
+                            <Button x:Name="Cancel" Text="Cancel"  Clicked="Cancel_Clicked"/>
                         </StackLayout>
                     </ViewCell>
                 </TableSection>

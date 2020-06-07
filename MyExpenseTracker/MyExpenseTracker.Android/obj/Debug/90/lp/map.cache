@@ -1,5 +1,7 @@
 FormsViewGroup
 SQLitePCLRaw.lib.e_sqlite3.android
+Syncfusion.Core.XForms.Android
+Syncfusion.SfChart.XForms.Android
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common

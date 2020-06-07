@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Dbs55TX7P1nIXszK8cuSsh6Ownt09rcgR54cuem48BGUbmhZXFsB6/I6y+2GLbCQIXQSWM8Ik9DeEokwRMaEtA==",
+  "dgSpecHash": "fH/J9gN8EitCVaFepkYAs7teSEUwEOHbEEEW+sm4zLXIM/aFNFOnOHIoK7G/fTMOLPMebAccMlyf3aFSe343SQ==",
   "success": true,
   "projectFilePath": "D:\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker\\MyExpenseTracker.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,9 @@
     "C:\\Users\\khush\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
     "C:\\Users\\khush\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
     "C:\\Users\\khush\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\khush\\.nuget\\packages\\syncfusion.licensing\\18.1.0.55\\syncfusion.licensing.18.1.0.55.nupkg.sha512",
+    "C:\\Users\\khush\\.nuget\\packages\\syncfusion.xamarin.core\\18.1.0.55\\syncfusion.xamarin.core.18.1.0.55.nupkg.sha512",
+    "C:\\Users\\khush\\.nuget\\packages\\syncfusion.xamarin.sfchart\\18.1.0.55\\syncfusion.xamarin.sfchart.18.1.0.55.nupkg.sha512",
     "C:\\Users\\khush\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\khush\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\khush\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

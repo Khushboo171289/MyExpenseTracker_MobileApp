@@ -4,28 +4,38 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MyExpenseTracker.AboutUs">
-    <ContentPage.Content>
-        <StackLayout BackgroundColor="#69CAEE">
-            <Label Text="**Team 7 Expense Tracker Mobile Application**
-                   
-                   
-                   By using this tool, we hope you can better manage your wealth !!"
-
+             x:Class="MyExpenseTracker.AboutUs"
+             Title="App Details">
+    <ContentPage.Content >
+        <StackLayout BackgroundColor="White" Orientation="Vertical" Spacing="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+           
+            <Label Text="**Team 7 Expense Tracker Mobile Application**"
+                          
                    FontAttributes="Bold"
                    FontSize="Large"
-                   BackgroundColor="#69CAEE"   
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="End" 
-                   Margin="10,10,10,10"/>
+                   BackgroundColor="White"   
+                     Margin="20,0,20,0"
+                   />
+            <Label Text="By using this App, we hope you can better manage your wealth !!"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   BackgroundColor="White" 
+                    Margin="20,0,20,0"/>
+            <Label Text="Expense Tracker help boosting your finances by helping you build your monthly budget and better manage your expenses "
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   BackgroundColor="White"  
+                    Margin="20,0,20,0"
+                   />
             <Label Text="This application is easy to use and is intuitive"
                    TextColor="Black"
-                   FontAttributes="Italic"
                    FontSize="Large"
-                   BackgroundColor="#69CAEE"   
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="End" 
-                   Margin="10,15,10,20"/>
+                   FontAttributes="Bold"
+                   BackgroundColor="White"  
+                    Margin="20,0,20,0"
+                   
+               
+                   />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage> 

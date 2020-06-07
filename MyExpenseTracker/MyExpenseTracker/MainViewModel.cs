@@ -21,8 +21,10 @@ namespace MyExpenseTracker
 
             }
         }
-        //public string DisplayName => $"Your Monthly Budget: {Name}";
+        
+
         public string DisplayName => $"{Name}";
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         void OnPropertyChanged(string name)

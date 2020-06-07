@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
+             xmlns:local="clr-namespace:MyExpenseTracker" 
+             xmlns:Model="clr-namespace:MyExpenseTracker.Model"
+             mc:Ignorable="d"
+             x:Class="MyExpenseTracker.Analysis"
+             Title="Analysis">
+    <ContentPage.BindingContext>
+        <Model:AllDataForGraph/>
+    </ContentPage.BindingContext>
+    <chart:SfChart>
+
+        <chart:SfChart.Title>
+            <chart:ChartTitle Text="Monthly Trends"/>
+        </chart:SfChart.Title>
+
+        <chart:SfChart.Legend>
+            <chart:ChartLegend/>
+        </chart:SfChart.Legend>
+
+        <chart:SfChart.PrimaryAxis>
+            <chart:CategoryAxis>
+                <chart:CategoryAxis.Title>
+                    <chart:ChartAxisTitle Text="Month"/>
+                </chart:CategoryAxis.Title>
+            </chart:CategoryAxis>
+        </chart:SfChart.PrimaryAxis>
+
+        <chart:SfChart.SecondaryAxis>
+            <chart:NumericalAxis>
+                <chart:NumericalAxis.Title Text="Dollars" />
+            </chart:NumericalAxis>
+        </chart:SfChart.SecondaryAxis>
+
+        <chart:ColumnSeries ItemsSource="{Binding GraphData}"
+                            XBindingPath="month"
+                            YBindingPath="budget"
+                            Label="Budget">
+        </chart:ColumnSeries>
+        <chart:ColumnSeries ItemsSource="{Binding GraphData}"
+                            XBindingPath="month"
+                            YBindingPath="expenditure"
+                            Label="Expenditure">
+        </chart:ColumnSeries>
+        <chart:ColumnSeries ItemsSource="{Binding GraphData}"
+                            XBindingPath="month"
+                            YBindingPath="balance"
+                            Label="Balance">
+        </chart:ColumnSeries>
+
+
+    </chart:SfChart>
+</ContentPage>

@@ -86,7 +86,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\address.png" />
+    <AndroidResource Include="Resources\drawable\bonds.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyExpenseTracker\MyExpenseTracker.csproj">
@@ -128,10 +128,16 @@
     <AndroidResource Include="Resources\drawable\budget.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bonds.png" />
+    <AndroidResource Include="Resources\drawable\groceries.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\groceries.png" />
+    <AndroidResource Include="Resources\drawable\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Chart1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

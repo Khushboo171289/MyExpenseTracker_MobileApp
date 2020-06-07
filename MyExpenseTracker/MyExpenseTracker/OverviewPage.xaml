@@ -4,12 +4,72 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MyExpenseTracker.OverviewPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Budget Overview"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             xmlns:local="clr-namespace:MyExpenseTracker"
+             xmlns:model="clr-namespace:MyExpenseTracker.Model"
+             x:Class="MyExpenseTracker.OverviewPage"   
+             Title="Overview">
+
+
+
+
+    <Grid VerticalOptions="FillAndExpand"  BackgroundColor="#3F539F">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="#3F539F">
+            <StackLayout Margin="0,0,15,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+                
+                <Label  x:Name="BudgetField" FontSize="Large" TextColor="#FDD406" VerticalOptions="Center" HorizontalTextAlignment="Center" 
+                           HorizontalOptions="Center" />
+                <Label x:Name="Budget" Text="Budget" HorizontalOptions="Center" TextColor="Black" FontSize="Large"  FontFamily="Roboto-Regular"  FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="#3F539F">
+                <StackLayout Margin="0,0,15,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="End">
+                    <Label Text="Spent" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center" HorizontalTextAlignment="Center" 
+                           HorizontalOptions="End" />
+                    <Label x:Name="Expenses" Text="Expenses" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular"  FontAttributes="Bold"/>
+                </StackLayout>
+                <BoxView Color="White" WidthRequest="1"></BoxView>
+                <StackLayout Margin="15,0,0,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="Start">
+                    <Label Text="Left" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center" HorizontalTextAlignment="Center" HorizontalOptions="Start" />
+                    <Label x:Name="Balance"  Text="Balance" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular"  FontAttributes="Bold"/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="30" BackgroundColor="White" VerticalOptions="FillAndExpand">
+            <Label Text="Spent"   FontAttributes="Bold" WidthRequest="50" Margin="170,0,0,0" TextColor="Black"/>
+            <Label Text="Balance" FontAttributes="Bold" WidthRequest="60" TextColor="Black"/>
+            <Label Text="Budget"  FontAttributes="Bold" WidthRequest="50" TextColor="Black"/>
+
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="White">
+            <ListView x:Name="CategoryListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                           
+                            <StackLayout Orientation="Horizontal" Spacing="30">
+                                <StackLayout Orientation="Horizontal" Spacing="20">
+                                    <Image Source="{Binding IconSource}" HeightRequest="30" WidthRequest="30"/>
+                                    <Label x:Name="CName" Text="{Binding Name}" WidthRequest="90"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="EndAndExpand" Margin="25,0,10,0">
+                                    
+                                        <Label x:Name="CSpent" Text="{Binding Spent , StringFormat='${0:N}'}" WidthRequest="80" />
+                                    <Label x:Name="CBalance" Text="{Binding Balance , StringFormat='${0:N}'}" WidthRequest="80" />
+                                    <Label x:Name="CBudget" Text="{Binding Budget , StringFormat='${0:N}'}" WidthRequest="80"/>
+                                 
+                                
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Grid>
+
 </ContentPage>

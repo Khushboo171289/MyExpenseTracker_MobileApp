@@ -4,38 +4,111 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:MyExpenseTracker"
              mc:Ignorable="d"
-             x:Class="MyExpenseTracker.BudgetPage">
-    <ContentPage.BindingContext>
-        <local:MainViewModel/>
-    </ContentPage.BindingContext>
+             x:Class="MyExpenseTracker.BudgetPage"
+             Title="Set Budget"
+             >
     <ContentPage.Content>
+
+
+
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+
+
+
             <TableView>
                 <TableRoot>
                     <TableSection>
-                        <EntryCell Label="Your Monthly budget" Text="{Binding DisplayName}" IsEnabled="False" />
-                        <EntryCell x:Name="expenditureEntry" Label="Your Monthly expenditure" Placeholder="0.00" Keyboard="Numeric" />
-                        <EntryCell x:Name="calcBalance" Label="Your Monthly balance" Placeholder="0.00" IsEnabled="False" />
-                        <!--<ImageCell Text="ImageCell Text" Detail="ImageCell Detail" ImageSource="overview.png" />-->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label Text="Budget Details for the Month of" TextColor="Black" FontSize="Medium" TextDecorations="Underline"></Label>
+                                <Label x:Name="Month" Text="{Binding Month}" TextColor="Black" FontSize="Medium" TextDecorations="Underline"></Label>
+                            </StackLayout>
+                        </ViewCell>
                     </TableSection>
+                    <TableSection>
+                        <EntryCell x:Name="budgetEntry"  Placeholder="Enter your budget" Keyboard="Numeric"   ></EntryCell>
+                    </TableSection>
+                    
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Margin="30,0,0,0" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Start" Spacing="10">
+                                <Image Source="home.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+                                <Label Text="Home" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular" />
+                                <Editor x:Name="HomePercentage" Margin="95,0,0,0" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center"  HorizontalOptions="Start" Keyboard="Numeric" Placeholder="Set %"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
+
+
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Margin="30,0,0,0" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Start" Spacing="10">
+                                <Image Source="food.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+                                <Label Text="Food" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular" />
+                                <Editor x:Name="FoodPercentage" Margin="100,0,0,0" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center"  HorizontalOptions="Start" Keyboard="Numeric" Placeholder="Set %"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
+
+
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Margin="30,0,0,0" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Start" Spacing="10">
+                                <Image Source="auto.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+                                <Label Text="Auto" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular" />
+                                <Editor x:Name="AutoPercentage"  Margin="105,0,0,0" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center"  HorizontalOptions="Start" Keyboard="Numeric" Placeholder="Set %"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
+
+
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Margin="30,0,0,0" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Start" Spacing="10">
+                                <Image Source="health.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+                                <Label Text="Health" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular" />
+                                <Editor x:Name="HealthPercentage" Margin="90,0,0,0" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center"  HorizontalOptions="Start" Keyboard="Numeric" Placeholder="Set %" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
+
+
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Margin="30,0,0,0" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Start" Spacing="10">
+                                <Image Source="education.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+                                <Label Text="Education" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular" />
+                                <Editor x:Name="EducationPercentage" Margin="65,0,0,0" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center"  HorizontalOptions="Start" Keyboard="Numeric" Placeholder="Set % "/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Margin="30,0,0,0" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="Start" Spacing="10" Padding="0">
+                                <Image Source="entertainment.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+                                <Label Text="Entertainment" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"  FontFamily="Roboto-Regular" />
+                                <Editor x:Name="EntertainmentPercentage" Margin="35,0,0,0" FontSize="Medium" TextColor="#FDD406" VerticalOptions="Center"  HorizontalOptions="Start" Keyboard="Numeric" Placeholder="Set %"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
+
+
+                    <TableSection>
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal" Margin="100,0,0,0">
+                                <Button x:Name="setButton" Text="Set" Clicked="OnSetButtonClicked" HorizontalOptions="Center"  />
+                                <Button x:Name="resetButton" Text="Reset" Clicked="OnResetButtonClicked" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
                 </TableRoot>
             </TableView>
-
-            <!--<Label Text="{Binding DisplayName}" FontSize="Large" TextColor="Green"  FontAttributes="Bold"/>-->
-
-            <Entry x:Name="budgetEntry" Text="{Binding Name}"
-                Placeholder="Enter your budget"
-                Keyboard="Numeric"    
-                
-                   Margin="10,-450,10,90"/>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Button x:Name="setButton" Text="Set" Clicked="OnSetButtonClicked"  />
-                <Button x:Name="resetButton" Text="Reset" Grid.Column="1" Clicked="OnResetButtonClicked" />
-            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

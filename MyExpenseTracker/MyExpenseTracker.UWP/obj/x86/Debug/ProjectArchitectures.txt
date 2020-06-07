@@ -1,1 +1,1 @@
-C:\Users\Shwet\source\repos\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\MyExpenseTracker.UWP.csproj;x86
+D:\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker\MyExpenseTracker.UWP\MyExpenseTracker.UWP.csproj;x86

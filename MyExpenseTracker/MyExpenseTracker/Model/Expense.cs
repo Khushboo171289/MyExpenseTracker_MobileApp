@@ -21,7 +21,9 @@ namespace MyExpenseTracker.Model
         public int ID { get; set; }
         public string Details { get; set; }
         public string Category { get; set; }
-        public double Spent { get; set; }
+        public decimal Spent { get; set; }
         public DateTime Date { get; set; }
+
+
     }
 }
