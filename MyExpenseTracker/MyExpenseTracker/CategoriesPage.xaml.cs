@@ -32,11 +32,7 @@ namespace MyExpenseTracker
            
         }
 
-        public async void goToBudgetPage()
-        {
-            await DisplayAlert("Alert", "Please set the budget first. Redirecting to Budget page", "OK");
-            await Navigation.PushModalAsync(new BudgetPage());
-        }
+       
 
         protected override async void OnAppearing()
         {
