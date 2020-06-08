@@ -21,10 +21,13 @@ Also can get a detailed overview of expense categories with expenses ,buget allo
 4.Monthly Trends (Graphical Representation): User has an option to view his Budget ,Expenses and Trends of every month 
  in the form of bar chart.
  
+ Packages used:
+ 1.Sqlite-net-pcl
+ 2.SyncFusion Xamarian SF Chart
 
 Contributors : Team 7
 1. Khushboo Thakur
 2. Silpa Nagari
 3. Shweta  Kulkarni
 
-)
+
