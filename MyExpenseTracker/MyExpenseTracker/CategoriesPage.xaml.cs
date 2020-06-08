@@ -23,18 +23,13 @@ namespace MyExpenseTracker
         public double ET ;
         public double EnT ;
 
-        public string _budgetFile = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "budget.txt");
+       
         public CategoriesPage()
         {
             InitializeComponent();
            
 
-            if (!File.Exists(_budgetFile))
-            {
-                // DisplayAlert("Alert", "You have been alerted", "OK");
-                goToBudgetPage();
-            }
+           
         }
 
         public async void goToBudgetPage()
