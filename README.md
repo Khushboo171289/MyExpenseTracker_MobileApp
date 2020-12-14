@@ -1,7 +1,7 @@
 # MyExpenseTracker
 
 
-Team 7 Assignment2 : Expense Tracking app.
+Expense Tracking app.
 The purpose of the application is to maintain monthly expenses of the User.User has an option to store his budget and 
 expense deatils for few of the expense categories already available in the app.
 
@@ -24,11 +24,5 @@ Also can get a detailed overview of expense categories with expenses ,buget allo
  Packages used:
  1.Sqlite-net-pcl
  2.SyncFusion Xamarian SF Chart
-
-Contributors : Team 7
-1. Khushboo Thakur
-2. Silpa Nagari
-3. Shweta  Kulkarni
-
 
 Youtube Link : https://youtu.be/YbnpQmPDf0E
